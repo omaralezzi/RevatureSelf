@@ -1,5 +1,7 @@
 package com.omar;
 
+import java.util.Scanner;
+
 public class NewClass {
 
 		public static void main(String args[]) {
@@ -114,7 +116,76 @@ public class NewClass {
 			int k=5;
 			k= k+10; //k+=10;
 			
+			//Scanner
+			/*
+			 Primitive:
+			 nextBoolean()
+			 nextbyte()
+			 nextShort()
+			 nextInt()
+			 nextLong()
+			 nextFloat()
+			 nextDouble()
+			 
+			 non Primitive:
+			 next()
+			 nextLine()
+			 */
 			
+			Scanner input1=new Scanner(System.in);
+			System.out.println("Enter number:");
+			int ff=input1.nextInt();
+			System.out.println("Number= "+ff);
+			
+			float nn1,nn2;
+			// not need it again already done Scanner input1=new Scanner(System.in);
+			System.out.println("Enter number 1:");
+			nn1=input1.nextFloat();
+			System.out.println("Enter number 2:");
+			nn2=input1.nextFloat();
+			System.out.println("Sum Number 1 and 2= "+ (nn1+nn2));
+			System.out.println("Num1 = "+nn1+" "+"num2 = "+nn2);
+			System.out.printf("Num1 = %.2f num2 = %f%n%n%n",nn1,nn2);
+			/* regarding %symbol
+			 d : [byte, short, int, long]
+			 f :[float,double]
+			 cC:char Capital C will uppercase the letter
+ 			 sS:String Capital S will uppercase all the letters in the String
+ 			 n : newline
+ 			  */
+			
+			System.out.println("Enter a String without space:");
+			String s1=input1.next();
+			System.out.printf("the value of the String is %s and the uppercase is %S%n",s1,s1);
+			
+			/*nextLine depend on the version
+			System.out.println("Enter a String with space:");
+			String s2=input1.nextLine();
+			System.out.printf(" is %s",s2);
+			*/
+			System.out.println("Enter a char:");
+			char c1=input1.next().charAt(0);
+			System.out.printf("the value of the String is %c and the uppercase is %C%n",c1,c1);
+			
+			// if - if else -if else if 
+			// == != < <= > >=
+			
+			System.out.println("even odd checker..please Enter a number: ");
+			long oddOrEven=input1.nextLong();
+			if(oddOrEven<0)System.out.println("The Number is less than 0");
+			else if (oddOrEven%2==0) System.out.println("The Number is Even");
+			else System.out.println("The Number is Odd");
+			
+			//Ternary Operator
+			//?:
+			int v=4;
+			int z= v==1? 2:5;
+			System.out.println("z="+z);
+			
+			// Instanceof Method used only with non Primitive 
+			
+			System.out.println(s1 instanceof String); //true or false
+			System.out.println(input1 instanceof Scanner); //true or false
 			
 		}
 		
