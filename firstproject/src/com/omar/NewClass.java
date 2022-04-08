@@ -20,6 +20,45 @@ public class NewClass {
 			System.out.println("A\nd\bJAVA\n"); 
 			//syso + ctrl +space
 			
+			boolean check=true; //Primitive Data Type
+			
+			char x = 'e'; //16bit unicode //Primitive Data Type
+			char y = 'o'; //16bit unicode //Primitive Data Type
+			
+			String name="Skynet"; // Object/Reference Data Type
+			
+			float no1=12.5f; //32bit //Primitive Data Type
+			double no2=1.5;//64bit //Primitive Data Type
+			
+			int no3=2;//32bit //Primitive Data Type
+			int $=2;//32bit //Primitive Data Type
+			byte _no=3; //8bit //Primitive Data Type
+			byte no3_1=0b1111111;
+			System.out.println("to print the binarry value: " + no3_1);
+			
+			short no4=4;//16bit //Primitive Data Type
+			long no5=49385793484873987L; //64bit //Primitive Data Type
+			
+			System.out.println(check);
+			System.out.println(x + y + x + " just a test");
+			System.out.println(x + " just another test");
+
+			System.out.println("I will name it :" + name);
+			
+			System.out.println(Byte.MAX_VALUE);
+			System.out.println(Byte.MIN_VALUE);
+			System.out.println(Short.MAX_VALUE);
+			System.out.println(Short.MIN_VALUE);
+			System.out.println(Integer.MAX_VALUE);
+			System.out.println(Integer.MIN_VALUE);
+			System.out.println(Long.MAX_VALUE);
+			System.out.println(Long.MIN_VALUE);
+			
+			System.out.println(Float.MAX_VALUE);
+			System.out.println(Float.MIN_VALUE);
+			System.out.println(Double.MAX_VALUE);
+			System.out.println(Double.MIN_VALUE);
+			
 		}
 		
 }
