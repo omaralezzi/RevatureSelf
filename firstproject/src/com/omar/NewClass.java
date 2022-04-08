@@ -84,7 +84,36 @@ public class NewClass {
 			System.out.println((int)nr5/(int)nr6); //narrowing Primitive Casting/Conversions
 			System.out.println((int)(nr5/nr6)); //narrowing Primitive Casting/Conversions
 
+			// ++ --
+		    //  x++; Postfix /pPost increment
+			//  ++x; Prefix /pre increment
+			int n=1;
+			System.out.println("Pre n="+ ++n);
+			
+			System.out.println("Post n="+ n++);
+			System.out.println("Post n="+ n++);
+			
+			int d=1;
+			System.out.println("d="+ d++ + " "+ ++d +" "+d++);
+			System.out.println("final d="+d);
+			
+			int g=d++;
+			System.out.println("g="+g);
+			System.out.println("after d="+d);
+			
+			int r= ++d + d++;
+			System.out.println("r="+r);
+			System.out.println("final again d="+d);
 
+			int m= (++d*2 + d++%2)/2;
+			System.out.println("m="+m);
+			System.out.println("final again complex d="+d);
+			
+			// The Assignment Operators
+			//= += -= *= /= %= &= ^= |= <<= >>= >>>=
+			int k=5;
+			k= k+10; //k+=10;
+			
 			
 			
 		}
