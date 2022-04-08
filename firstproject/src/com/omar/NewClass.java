@@ -59,6 +59,34 @@ public class NewClass {
 			System.out.println(Double.MAX_VALUE);
 			System.out.println(Double.MIN_VALUE);
 			
+			//Arithmetic Operations (Basic Operation)
+			//+ - * / %
+			/*operator precedence 
+			https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html
+			*/ 
+			System.out.println((5+6)*2);
+			
+			System.out.println(15/2);
+			System.out.println(15.0/2);
+
+			System.out.println(15/2f);
+			
+			int nr1=9,nr2=2;
+			System.out.println(nr1/nr2);
+			System.out.println((float)nr1/nr2); //Widening Primitive Casting/Conversions
+			
+			int nr3=9;
+			float nr4=2;
+			System.out.println(nr3/nr4);
+			
+			float nr5=9,nr6=2;
+			System.out.println(nr5/nr6);
+			System.out.println((int)nr5/(int)nr6); //narrowing Primitive Casting/Conversions
+			System.out.println((int)(nr5/nr6)); //narrowing Primitive Casting/Conversions
+
+
+			
+			
 		}
 		
 }
