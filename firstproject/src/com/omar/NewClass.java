@@ -233,7 +233,37 @@ public class NewClass {
 			
 			
 			
+			// while loop
+			char op=' ';
+			while (op !='e') 
+		 {
+			System.out.println("Enter an Operator + - * / %  or e for exit:");
+			op=input1.next().charAt(0);
 			
+			switch(op) {
+			
+			case '+':
+				System.out.println("the result for 5+2="+ (5+2));
+			    break;
+			case '-':
+				System.out.println("the result for 5+2="+ (5-2));
+			    break;
+			case '*':
+				System.out.println("the result for 5+2="+ (5*2));
+			    break;
+			case '/':
+				System.out.println("the result for 5+2="+ (5/2));
+			    break;
+			case '%':
+				System.out.println("the result for 5+2="+ (5%2));
+			    break;    
+			default:
+				if (op=='e') System.out.println("Exit");
+				else System.out.println("incorrect input");
+			//  break;
+						
+			}
+		   }
 			
 			
 				
