@@ -278,8 +278,17 @@ public class NewClass {
 				
 			
 		// for loop
+		// for + ctrl + space will is a shortcut to create for loop	
 			
+			for (int ii=0;ii<5;ii++)
+			{
+				System.out.println("for loop:"+ii);
+			}
 			
+			for (int p=0,j=5;p>8 | j>=0;p++,j--) //to loop with dual (or more)condition 
+			{
+				System.out.println("p="+p+"\t"+"j="+j);
+			}
 			
 			
 			
