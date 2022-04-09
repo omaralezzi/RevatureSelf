@@ -187,6 +187,58 @@ public class NewClass {
 			System.out.println(s1 instanceof String); //true or false
 			System.out.println(input1 instanceof Scanner); //true or false
 			
+			// Switch
+			
+			int xx=2;
+			
+			switch(xx) { // only byte,short,char,int,String but not accept float or double
+		//  switch(5/2) in this case it will ignore the fraction and count the result as 2 
+			case 1:
+				System.out.println("case #1");
+		        break;
+			case 2:
+				System.out.println("case #2");
+			//  break;
+			case 3:
+				System.out.println("case #3");
+			//  break;
+			
+			default:
+				System.out.println("case # default");
+			//  break;
+						
+			}
+			
+			System.out.println("Enter day number:");
+			int day=input1.nextInt();
+			
+			switch(day) {
+			case 1:
+			case 2:
+			case 3:
+			case 4:
+			case 5:
+				System.out.println("Weekday");
+			    break;
+			case 6:
+			case 7:	
+				System.out.println("Weekend");
+			    break;
+			
+			default:
+				System.out.println("incorrect input");
+			//  break;
+						
+			}
+			
+			
+			
+			
+			
+			
+				
+			
+			
 		}
 		
 }
