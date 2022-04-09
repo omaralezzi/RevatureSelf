@@ -291,7 +291,99 @@ public class NewClass {
 			}
 			
 			
+		// Branching Statements ( Break/Continue )
+		// There is labeled Break and unlabeled Break (this one caused immediate EXIT from control structure)
+		// Continue : skips remaining statements there is also labeled & unlabeled Continue
+		/*
+		 -in general unlabeled Break will effect what is inside the BLOCKS { } when it is activated
+		  
+		 - labeled Break will effect what is inside the labeled BLOCKS 
+		 omar:{ 
+		 ..
+		 .. 
+		 break omar;
+		 ..
+		 } 
+		 when it is activated
+		  
+		 */	
+		
+	    //Ex: about unlabel Break
+		for (int row = 1; row <= 10 ; row++) {
+			for (int column = 1; column <=5; column++) {
+				if(row==5) break;
+				System.out.print("* ");
+			}
+			System.out.println("");
+		}	
+		
+		
+		//Ex: about label Break
+		stopNow:{
+		System.out.println("----------------------------");	
+		for (int row = 1; row <= 10 ; row++) {
+			for (int column = 1; column <=5; column++) {
+				if(row==5) break stopNow;
+				System.out.print("* ");
+			}
+			System.out.println("");
+		}
+		}
+		
+		/* or with another version
+		System.out.println("----------------------------");	
+		
+		stopNow:for (int row = 1; row <= 10 ; row++) {
+			for (int column = 1; column <=5; column++) {
+				if(row==5) break stopNow;
+				System.out.print("* ");
+			}
+			System.out.println("");
+		}
+		
+		  */
+		
+		//Ex: about unlabeled Continue
+		/*
+		 
+		 * 
+		 * * 
+		 * * * 
+		 * * * * 
+		 * * * * *
+		  
+		  */
+		System.out.println("#####################");
+		for (int row = 1; row <= 5 ; row++) {
+			System.out.println();
+			for (int column = 1; column <=10; column++) {
+				if(column>row) continue;
+				System.out.print("* ");
+			}
 			
+		}
+		
+		
+		//Ex: about labeled Continue
+				/*
+				 
+				 * 
+				 * * 
+				 * * * 
+				 * * * * 
+				 * * * * *
+				  
+				  */
+				System.out.println();
+				System.out.println("#####################");
+				nextRow:for (int row = 1; row <= 5 ; row++) {
+					System.out.println();
+					for (int column = 1; column <=10; column++) {
+						if(column>row) continue nextRow;
+						System.out.print("* ");
+					}
+					System.out.println("line #1");
+				}
 			
 			
 			
