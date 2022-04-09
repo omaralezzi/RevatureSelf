@@ -234,6 +234,8 @@ public class NewClass {
 			
 			
 			// while loop
+// there is count (depend on the counter),Sentinel(depend on EXIT input for ex e like below) ,flag While loops 
+			// flag we need to create a TRUE value that will change inside the loop with if condition to FALSE
 			char op=' ';
 			while (op !='e') 
 		 {
@@ -265,10 +267,35 @@ public class NewClass {
 			}
 		   }
 			
+		 
+		// (Do-While Loop)
 			
+			int ccc=0;
+			do {
+				System.out.println("Test"+ ccc);
+				ccc++;
+			}while(ccc<5);
 				
 			
+		// for loop
 			
-		}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		} // end CB
 		
 }
