@@ -291,7 +291,7 @@ public class NewClass {
 			}
 			
 			
-		// Branching Statements ( Break/Continue )
+		// Branching Statements ( Break/Continue /return <--(will explained with function) )
 		// There is labeled Break and unlabeled Break (this one caused immediate EXIT from control structure)
 		// Continue : skips remaining statements there is also labeled & unlabeled Continue
 		/*
@@ -386,17 +386,19 @@ public class NewClass {
 				}
 			
 			
-			
-			
-			
-			
-			
-			
-			
+		//Method / Function	
+		
+		System.out.println(sumTwoNumbers(6, 8));	
 			
 			
 			
 			
 		} // end CB
+		
+		//Function to calculate sum of two numbers
+		static int sumTwoNumbers(int n1,int n2) { //Declare (Prototype) the Function
+			int sum= n1+n2;
+			return sum;
+		}
 		
 }
