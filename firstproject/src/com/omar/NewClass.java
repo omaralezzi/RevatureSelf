@@ -387,9 +387,10 @@ public class NewClass {
 			
 			
 		//Method / Function	
-		
+		System.out.println();
 		System.out.println(sumTwoNumbers(6, 8));	
-			
+		
+		System.out.println(sumManyNumbers(3,6,11,666,100,10));
 			
 			
 			
@@ -400,5 +401,15 @@ public class NewClass {
 			int sum= n1+n2;
 			return sum;
 		}
+		
+		
+		//Function to calculate sum of one or more numbers using VARIABLE NUMBERS OF ARGUMENTS
+				static int sumManyNumbers(int...n) { // n is an array
+					int sum=0;
+					for (int i : n) {
+						sum+=i;
+					}
+					return sum;
+				}
 		
 }
