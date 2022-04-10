@@ -11,7 +11,20 @@ public class Product2 {
 	private float price;
 	private int quatity;
 	private float discount;
+	private String color;
 	
+	//public Product2() {} // as a default constructor
+	/*  type    Default Value
+	 	boolean false
+	 	byte	0
+	 	short	0
+	 	int		0
+	 	long	0L
+	 	char	\ u000
+	 	float	0.0f
+	 	double	0.0d
+	 	object	null
+	  */
 	public Product2() { // no args constructor
 		this.name="No name";
 		this.description="No description";
@@ -26,7 +39,15 @@ public class Product2 {
 		this.price=p;
 		this.quatity=q;
 		this.discount=dis;
+		System.out.println("constructor:5");
 	}
+	
+	public Product2(String n,String d,float p,int q,float dis,String c) { // constructor Chaining -->when a constructor calls another constructor of the same class 
+		this(n,d,p,q,dis);
+		this.color=c;
+		System.out.println("constructor:6");
+	}
+	
 	
 	public void display() {
 		System.out.println("Name="+name);
