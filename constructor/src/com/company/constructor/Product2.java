@@ -48,6 +48,23 @@ public class Product2 {
 		System.out.println("constructor:6");
 	}
 	
+	public Product2(Product2 obj) { // Copy constructor 
+		this.name=obj.name;
+		this.description=obj.description;
+		this.price=obj.price;
+		this.quatity=obj.quatity;
+		this.discount=obj.discount;
+		this.color=obj.color;
+	}
+	/* smaller version for the COPY constructor:
+	 public Product2(Product2 obj) { // Copy constructor (smaller version)
+		this(obj.name,obj.description,obj.price,obj.quantity,obj.discount,obj.color);
+	}
+	 
+	 
+	 
+	 */
+	
 	
 	public void display() {
 		System.out.println("Name="+name);
@@ -56,4 +73,53 @@ public class Product2 {
 		System.out.println("quatity="+quatity);
 		System.out.println("discount="+discount);
 	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public float getPrice() {
+		return price;
+	}
+
+	public void setPrice(float price) {
+		this.price = price;
+	}
+
+	public int getQuatity() {
+		return quatity;
+	}
+
+	public void setQuatity(int quatity) {
+		this.quatity = quatity;
+	}
+
+	public float getDiscount() {
+		return discount;
+	}
+
+	public void setDiscount(float discount) {
+		this.discount = discount;
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+	
 }
