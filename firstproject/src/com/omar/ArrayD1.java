@@ -1,5 +1,7 @@
 package com.omar;
 
+import java.util.Scanner;
+
 public class ArrayD1 {
 
 	public static void main(String[] args) {
@@ -14,7 +16,7 @@ public class ArrayD1 {
 		System.out.println(a[0]+" "+a[3]);
 		System.out.println(n.length);
 
-		/** defult intial value for any cell in the arrry is:
+		/** Default initial value for any cell in the array is:
 		 * long,int=0
 		 * double,float=0.0
 		 * char,String=null
@@ -34,7 +36,20 @@ public class ArrayD1 {
 			System.out.println(i);
 		}
 		
+		System.out.println("#############");
 
+		// unicode (ASCII) https://www.asciitable.com/
+		 char arrOfChar[]= {'H','e','l','l','o',' ',97,98};
+		 System.out.println(arrOfChar);
+		 
+		 System.out.println((char)66);
+		 
+		 System.out.println("#############");
+		 
+		 char arr[]=new char[5];
+		 Scanner input=new Scanner(System.in);
+		 arr=input.nextLine().toCharArray();
+		 System.out.println(arr[0]);
 	}
 
 }
